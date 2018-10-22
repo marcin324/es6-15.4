@@ -5,7 +5,6 @@
 var hello = 'Hello';
 var world = 'World';
 var helloWorld = hello + ' ' + world;
-/*console.log(helloWorld);*/
 
 /*Zadanie drugie*/
 
@@ -13,7 +12,6 @@ var multiply = function multiply(a) {
   var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
   return a * b;
 };
-/*console.log(multiply(4))*/
 
 /*Zadanie trzecie*/
 
@@ -27,8 +25,6 @@ var average1 = function average1() {
     return ave1 = ave1 + arg / args.length;
   });
 };
-/*average(5, 10, 2, 3, 30);
-console.log(ave);*/
 
 /*Zadanie czwarte*/
 
@@ -39,12 +35,11 @@ var average2 = function average2() {
     args[_key2] = arguments[_key2];
   }
 
-  return args.forEach(function (grad) {
-    return ave2 = ave2 + grad / grades.length;
+  return args.forEach(function (grade) {
+    return ave2 = ave2 + grade / grades.length;
   });
 };
-average.apply(undefined, grades);
-/*console.log(ave);*/
+average2.apply(undefined, grades);
 
 /*Zadanie piąte*/
 
@@ -54,4 +49,3 @@ var third = array[2],
 
 var firstName = '' + third;
 var lastName = '' + fifth;
-/*console.log(`${firstName} ${lastName}`);*/
